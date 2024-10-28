@@ -2,7 +2,7 @@ import { Chart } from "chart.js";
 
 
 const canvas=document.getElementById("barcanvas");
-const barchar= new Chart(canvas,{
+ export function bars(ids){const barchar= new Chart(ids,{
     type:"bar",
     data:{
         labels:["laye","esdmon"],
@@ -12,3 +12,4 @@ const barchar= new Chart(canvas,{
     }
 
 })
+ }

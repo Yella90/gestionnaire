@@ -17,8 +17,21 @@ header{
     background-color:whitesmoke;
     }
 body{
-    background-color: rgb(230, 227, 225);
+    background-color: rgb(250, 222, 203);
+    width: 100%;
 
+}
+.action a{
+    text-decoration: none;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid lightblue;
+}
+.form{
+    width: 100%;
 }
 .body{
     display: flex;
@@ -27,6 +40,29 @@ body{
     height: 100%;
     width: 100%;
 }
+.action{
+    position: sticky;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(18, 167, 212) ;
+    width: 20%;
+}
+
+
+
+h2,h5{
+    color: rgba(39, 19, 218, 0.767);
+    font-size: 1.5rem;
+}
+a{
+    font-size: 1.5rem;
+    padding: 1.2rem;
+}
+
+
+
 .card svg{
     color:rgba(39, 19, 218, 0.767);
 }
@@ -38,6 +74,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    width: 100%;
 }
 .container{
    justify-content: space-evenly;
@@ -45,22 +82,15 @@ body{
     height: 400px;
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+   width: 100%;
 }
 canvas{
     display: flex;
-    width: 200px;
+    width: 300px;
+    
 }
-.action a{
-    text-decoration: none;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-bottom: 2px solid lightblue;
-}
+
 .card{
     justify-content: space-between;
    align-items: center;
@@ -83,27 +113,6 @@ canvas{
 }
 .container .canvas{
     display: flex;
-    width: max-content;
+   
     height: 400px;
 }
-.action{
-    position: sticky;
-    bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:rgb(18, 167, 212) ;
-    width: 15%;
-}
-
-
-
-h2,h5{
-    color: rgba(39, 19, 218, 0.767);
-}
-
-
-
-
-
-

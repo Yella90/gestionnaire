@@ -14,17 +14,24 @@ header{
     justify-content: space-between;
     height: 70px;
     padding: 5px;
-    background-color:aquamarine;
+    background-color:whitesmoke;
     }
-form {
-    display:flex;
-    flex-direction: column;
+body{
+    background-color: rgb(250, 222, 203);
+    width: 100%;
+
+}
+.action a{
+    text-decoration: none;
+    height: 60px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    background-color: blueviolet;
-    backdrop-filter: blur(20px);
-    padding: 10px;
-    width: 250px;
+    width: 100%;
+    border-bottom: 2px solid lightblue;
+}
+.form{
+    width: 100%;
 }
 .body{
     display: flex;
@@ -40,24 +47,7 @@ form {
     flex-direction: column;
     align-items: center;
     background-color:rgb(18, 167, 212) ;
-    width: 15%;
-}
-
-.action a{
-    text-decoration: none;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-bottom: 2px solid lightblue;
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-   
+    width: 20%;
 }
 form select{
     padding: 5px;
@@ -65,13 +55,24 @@ form select{
     width: 240px;
     margin-top: 10px;
 }
-form input{  
+.clas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgba(103, 58, 209, 0.849);
+    padding-bottom: 10px;
+}
+.clas input{  
     padding: 0px 0px 0px 25px;
     height: 30px;
     width: 240px;
     margin-top: 10px;
 }
 table{
+    
     width: 100%;
     align-content: center;
     text-align: center;

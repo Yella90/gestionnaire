@@ -64,12 +64,12 @@ app.get("/classe",(req,res)=>{
         if(err){
             console.log(err)
         }
-        console.log(rows)
+        //console.log(rows)
         let r=rows
         datac={ user:req.session.user,etabli:req.session.etabli,cl:r}
         res.render("classe",datac)
     })
-    console.log(datac)
+    //console.log(datac)
         
     }else{
         //res.render('connexion')
@@ -163,7 +163,7 @@ app.post("/connexion",(req,res)=>{
                         
                         rows.forEach(element => {
                             clas+=1
-                            console.log(element)
+                            //console.log(element)
                         });
                  
                 datac={ user:req.session.user,etabli:req.session.etabli,elevett:elevet, classes:clas}         
@@ -286,7 +286,7 @@ app.post("/inscription",(req,res)=>{
 app.post("/etablissement",(req,res)=>{
     db.serialize(() => {
         const { nom,user,motpass,descrip } = req.body;
-        console.log(nom)
+        //console.log(nom)
        db.run("INSERT INTO etablissements (nom,user,motpass,descrip) VALUES (?, ?,?,?)", [nom,user,motpass,descrip], function(err) {
         if (err) {
             console.log(err.message);
