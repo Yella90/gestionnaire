@@ -19,7 +19,7 @@ const session=require("express-session");
 const path = require('path');
 const app = express();
 app.use(express.static('public'))
-app.set('views', path.join(__dirname, 'affichage'));
+app.set('views', path.join(__dirname, 'Affichage'));
 
 const PORT = 3000;
 app.use( session({
