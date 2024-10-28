@@ -18,8 +18,11 @@ const { render } = require('ejs');
 const session=require("express-session");
 
 
+
 const app = express();
 app.use(express.static('public'))
+app.set('views', path.join(__dirname, 'affichage'));
+
 const PORT = 3000;
 app.use( session({
     secret:"fdlfdv",
