@@ -1,5 +1,33 @@
 
 
+const { Client } = require('pg');
+
+// Remplacez par votre URL de connexion PostgreSQL
+const connectionString = process.env.DATABASE_URL; // Assurez-vous que cette variable d'environnement est définie
+
+// Créer une nouvelle instance de Client
+const client = new Client({
+    connectionString: connectionString,
+    ssl: { rejectUnauthorized: false } // Nécessaire si vous utilisez Render
+});
+client.connect()
+    .then(() => {
+        console.log('Connexion à la base de données réussie');
+        
+        // Vous pouvez exécuter des requêtes ici
+        return client.query('SELECT NOW()'); // Exemple de requête pour obtenir l'heure actuelle
+    })
+    .then(res => {
+        console.log('Heure actuelle :', res.rows[0]);
+    })
+    .catch(err => {
+        console.error('Erreur lors de la connexion à la base de données', err.stack);
+    })
+    .finally(() => {
+        // Terminer la connexion
+        client.end();
+    });
+
 const sqlite3 = require('sqlite3').verbose();
 
 
