@@ -8,8 +8,8 @@
     "postinstall": "npm rebuild sqlite3 --build-from-source"
   },
   "engines": {
-  "node": "16.x"
-},
+    "node": "16.x"
+  },
   "author": "Laye Soma Doumbia",
   "license": "ISC",
   "description": "",
@@ -19,6 +19,7 @@
     "ejs": "^3.1.10",
     "express": "^4.21.1",
     "express-session": "^1.18.1",
+    "pg": "^8.13.1",
     "sqlit": "^2.0.0",
     "sqlite3": "^5.1.7"
   }
